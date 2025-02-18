@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import KeyboardLogo from './assets/kbpp_logo.png'
 import './App.css'
+import {Route, Routes, useNavigate} from "react-router-dom";
+import Page2 from "./BuildPage.jsx";
+import HowToPage from "./HowTo.jsx";
 
+function Home() {
+    const navigate = useNavigate();
+
+    const sendToPage2 = () => {
+        navigate('/page2');
+    };
+    const sendToHowTo = () => {
+        navigate('/howTo');
+    };
+
+
+    return (
+        <>
+            <div>
+                <a href="#" onClick={() => navigate(0)}>
+                    <img src={KeyboardLogo} className="logo Keyboard" alt="Keyboard logo"/>
+                </a>
+            </div>
+            <h1>Welcome to Keyboard Part Picker</h1>
+            <div className="card">
+                <button onClick={sendToPage2} type="button">
+                    Let&#39;s Build
+                </button>
+            </div>
+            <button onClick={sendToHowTo} className={ "how-to-build"}>
+                How to build a keyboard?
+            </button>
+        </>
+    )
+}
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/page2" element={<Page2 />} />
+            <Route path="/howTo" element={<HowToPage />} />
+        </Routes>
+    );
 }
 
 export default App

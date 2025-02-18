@@ -1,0 +1,115 @@
+/* General Page Styles */
+
+
+h1 {
+    text-align: center;
+    color: lightpink;
+}
+
+/* To-Do List Container */
+.todo-container {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Input and Add Button */
+.input-container {
+    display: flex;
+    align-items: center;
+
+    padding: 5px;
+}
+
+.todo-input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.todo-input:focus {
+    outline: none;
+}
+
+#add-task-btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: lightpink;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+    background-color: rgb(255, 182, 193);
+}
+
+/* To-Do List */
+.build-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.build-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: lightpink;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.build-part.checkbox {
+    margin-right: 10px;
+}
+
+.delete-btn {
+    border-radius: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: darkslategrey;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #2c3e50;
+}
+
+/* Completed Tasks */
+.build-part.completed {
+    text-decoration: line-through 2px darkslategrey;
+    opacity: 0.6;
+}
+
+/* Build List Styles */
+.build-list {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.build-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: lightpink;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.build-part.completed {
+    text-decoration: line-through 2px darkslategrey;
+    opacity: 0.6;
+}
