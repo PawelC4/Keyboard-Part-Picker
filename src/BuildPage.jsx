@@ -37,7 +37,7 @@ function Page2() {
                     onChange={(e) => setNewTask(e.target.value)}
                     onKeyDown={(e) => e.key === "Enter" && addTask()}
                 />
-                <button onClick={addTask}>Add Part</button>
+                <button onClick={addTask}>Add </button>
             </div>
             <ul className="build-list">
                 {tasks.map((task, index) => (

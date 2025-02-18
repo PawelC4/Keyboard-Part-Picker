@@ -1,8 +1,4 @@
-# React + Vite
+# KEYBOARD PART PICKER
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A website that informs the users on the process of picking out keyboard parts to building your own keyboard. It includes a build list and descriptions of all keyboard components.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
