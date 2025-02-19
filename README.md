@@ -11,3 +11,6 @@ Future plans for project:
     - [ ] list item price
     - [ ] list item link
     - [ ] delete all button
+- [ ] switch for dark and light mode
+- [ ] Cleaner interface for How To page
+- [ ] How to mod a keyboard page 
