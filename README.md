@@ -11,6 +11,9 @@ Future plans for project:
     - [ ] list item price
     - [ ] list item link
     - [ ] delete all button
+    - [ ] ? button that brings you to how to page section
+    - [ ] compatability exceptions ( wrong size ), clip in or screw in stabs, 
 - [ ] switch for dark and light mode
 - [ ] Cleaner interface for How To page
-- [ ] How to mod a keyboard page 
+- [ ] How to mod a keyboard page
+      
