@@ -19,7 +19,7 @@ function Home() {
                     <img src={KeyboardLogo} className="logo Keyboard" alt="Keyboard logo"/>
                 </a>
             </div>
-            <h1>Welcome to Keyboard Part Picker</h1>
+            <h1 style={{color: "var(--color-h1)"}}>Welcome to Keyboard Part Picker</h1>
             <div className="card">
                 <button className = "HomeBtn" onClick={sendToPage2} style={{ width: "20vw"}} type="button">
                     Let&#39;s Build

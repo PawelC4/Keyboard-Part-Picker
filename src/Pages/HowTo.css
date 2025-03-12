@@ -1,3 +1,53 @@
-.partBtn{
+/* Wrapper for proper border radius */
+.table-container {
+    border-radius: 10px; /* Rounds corners */
+    overflow: hidden; /* Ensures table obeys rounded corners */
+    border: 1px solid var(--color-active); /* Adds outer border */
+    width: fit-content; /* Ensures the border hugs the table tightly */
+    margin: 0 auto; /* Centers the table */
+}
+
+/* Table styling */
+table {
+    width: 800px; /* Adjust as needed */
+    height: 200px;
+    border-collapse: collapse; /* Keeps table structure intact */
+    padding: 10px;
+    color: var(--color-text);
 
 }
+
+/* Apply border to each cell */
+th, td {
+    text-align: left;
+    padding: 10px;
+    padding-right: 20px;
+    border: 1px solid var(--color-active);
+}
+
+/* Remove top border from first row */
+table tr:first-child th {
+    border-top: none;
+}
+
+/* Remove left border from first column */
+table tr td:first-child,
+table tr th:first-child {
+    border-left: none;
+}
+
+/* Remove right border from last column */
+table tr td:last-child,
+table tr th:last-child {
+    border-right: none;
+}
+
+/* Remove bottom border from last row */
+table tr:last-child td {
+    border-bottom: none;
+}
+th{
+    background-color: var(--color-button);
+}
+
+

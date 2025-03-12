@@ -7,7 +7,7 @@
     transition: filter 300ms;
 }
 .logo:hover {
-    filter: drop-shadow(0 0 2em #ff95ce);
+    filter: drop-shadow(0 0 2em var(--color-backshadow));
 }
 .card {
     padding: 2em;
@@ -20,14 +20,14 @@
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    color: #ffffff;
-    background-color: #2d2344;
+    color: var(--color-text);
+    background-color: var(--color-button);
     cursor: pointer;
     transition: border-color 0.25s,transform 0.3s ease-in-out;
 
 }
 .HomeBtn:hover {
-    border-color: #ff95ce;
+    border-color: var(--color-hover-button);
     transform: scale(1.1);
 
 }

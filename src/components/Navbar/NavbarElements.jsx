@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-    background: #2d2344;
+    background: var(--color-foreground);
     position: fixed;
     display: flex;
     width: 100vw;
@@ -20,7 +20,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-    color: #ffffff;
+    color: var(--color-text);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -29,13 +29,13 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 
     &.active {
-        color: #fdabde;
+        color: var(--color-active);
     }
 `;
 
 export const Bars = styled(FaBars)`
     display: none;
-    color: #808080;
+    color: var(--color-text);
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;
@@ -66,8 +66,8 @@ export const NavBtn = styled.nav`
     align-items: center;
     margin-right: 24px;
     /* Third Nav */
-    /* justify-content: flex-end;
-  width: 100vw; */
+     justify-content: flex-end;
+  width: 100vw; 
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -75,7 +75,6 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(Link)`
     border-radius: 4px;
-    background: #808080;
     padding: 10px 22px;
     color: #000000;
     outline: none;
@@ -87,7 +86,8 @@ export const NavBtnLink = styled(Link)`
     margin-left: 24px;
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #808080;
+        background: var(--color-active);
+        color: var(--color-text);
     }
 `;
+
